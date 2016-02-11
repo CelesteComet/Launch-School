@@ -1,0 +1,42 @@
+* {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+html {
+  background: yellow;
+}
+
+main {
+  margin: 5px;
+  padding:15px;
+  background: white;
+}
+
+main:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+.sidebar {
+  width:20%;
+  float:left;
+  padding-top:66px;
+}
+
+.container {
+  width:80%;
+  float:right;
+}
+
+.game {
+  padding:15px;
+  border-bottom:1px solid gray;
+}
+
+h1 {
+  margin-bottom:15px;
+}
+
+

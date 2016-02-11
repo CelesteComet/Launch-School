@@ -1,0 +1,9 @@
+#manipulatedImages canvas{
+  float:right;
+  width:50%;
+}
+
+#startingImages img{
+  float:left;
+  width:50%;
+}

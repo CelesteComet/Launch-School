@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div id="savedImage"></div>
+<canvas width="800" height="500"></canvas>
+<ul>
+  <li><a class="active drawing_method" data-method="circle" href="#">Circle</a></li>
+  <li><a class="drawing_method" data-method="square" href="#">Square</a></li>
+  <li><a class="drawing_method" data-method="triangle" href="#">Triangle</a></li>
+  <li><a id="clear" href="#">Clear</a></li>
+  <li><a id="save" href="#">Save</a></li>
+  <li>
+    <form action="" method="get">
+      <input type="text" name="color">
+    </form>
+  </li>
+</ul>
+</body>
+</html>

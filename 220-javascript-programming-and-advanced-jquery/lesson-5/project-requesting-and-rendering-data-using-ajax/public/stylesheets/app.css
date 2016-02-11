@@ -1,0 +1,83 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin: 0 8% 0 8%;
+  background:black;
+}
+
+main{
+  background: white;
+  padding:22px;
+}
+
+.title {
+  margin:10px 0px 10px 0px;
+  color:#333333;
+  font-size:32px;
+  font-family: "Helvetica", "Arial", "sans-serif";
+}
+
+.gallery {
+  position: relative;
+}
+
+.galleryImg {
+  width:100%;
+  height:100%;
+}
+
+.galleryCap {
+  background: black;
+  color:white;
+  padding:20px;
+}
+
+.arrow {
+  background: url('/images/icon_pager.png');
+  position: absolute;
+  height: 80px;
+  width: 48px;
+  top: 35%;
+}
+
+.rightarrow {
+  right: 0;
+  width: 48px;
+  background-position-x: 48px;
+}
+
+.gravatar {
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.commentFigure{
+  width:13%;
+  display:inline-block;
+  float:left;
+}
+
+.commentMain{
+  width:80%;
+  display:inline-block;
+  float:left
+}
+
+article:after{
+  content:'';
+  clear:both;
+  display:block;
+}
+
+article{
+  padding: 10px 0px 40px 0px;
+  border-bottom: 1px solid black;
+}
+
+article:last-of-type{
+  border:none;
+}
+

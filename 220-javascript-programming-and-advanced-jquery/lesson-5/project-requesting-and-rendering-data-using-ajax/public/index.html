@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Gallery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+  <script type="text/javascript" src="javascripts/gallery.js"></script>
+</head>
+<body>
+  <main>
+    <h1 class="title">Serina Hayakawa</h1>
+    <div id="gallery" class="gallery">
+      <!-- PHOTO TEMPLATE AREA -->
+      <div>
+        <div id="leftarrow" class="arrow"></div>
+        <div id="rightarrow" class="arrow rightarrow"></div>
+      </div>
+    </div>
+    <div id="photo-info">
+      <!-- PHOTO INFO TEMPLATE AREA -->
+    </div>
+    <div id="comments">
+      <!-- COMMENTS TEMPLATE AREA -->
+    </div>
+    <h3>Your Comment</h2>
+    <form>
+      <dl>
+        <dt><label for="name">Your Name</label></dt>
+        <dd><input name="name" type="text"></dd>
+        <dt><label for="email">Email Address</label></dt>
+        <dd><input name="email" type="email"></dd>
+        <dt><label for="body">Comment</label></dt>
+        <dd><textarea name="body" cols="20" rows="8"></textarea></dd>
+      </dl>
+      <button type="submit">Post Comment</button>
+    </form>
+  </main>
+</body>
+</html>
+
+<script id="photo" type="text/x-handlebars">
+  <figure>
+    <img class="galleryImg" src="{{src}}">
+    <figcaption class="galleryCap">
+      {{caption}}
+    </figcaption>
+  </figure>
+</script>
+
+<script id="photo-info" type="text/x-handlebars">
+  <h1 class="title">{{title}}</h1>
+  <small>Taken on <time>{{created_at}}</time></small>
+  <button id="likes">
+    {{#if likes}}
+      {{likes}}
+    {{else}}
+    0
+    {{/if}}
+    likes
+  </button>
+  <button id="favorites">
+    {{#if favorites}}
+      {{favorites}}
+    {{else}}
+    0
+    {{/if}}
+    favorites
+  </button>
+  <h1 class="title">Comments</h1>
+</script>
+
+<script id="comments" type="text/x-handlebars">
+  {{#each comments}}
+    {{>comment}}
+  {{/each}}
+</script>
+
+<script id="comment" type="text/x-handlebars">
+  <article id="{{photo_id}}">
+    <figure class='commentFigure'>
+      <img class="gravatar" src="{{gravatar}}">
+    </figure>
+    <div class="commentMain">
+      <h2>{{name}}</h2>
+      <small>Posted on <time>{{date}}</time></small>
+      <p>{{body}}</p>
+    </div>
+  </article>
+</script>
+

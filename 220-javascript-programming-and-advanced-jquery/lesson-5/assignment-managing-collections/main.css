@@ -1,0 +1,16 @@
+* {
+  list-style-type: none;
+}
+
+li,ul {
+  padding:0;
+  margin:0;
+}
+
+.inlineblock {
+  display:inline-block;
+}
+
+.buttonList {
+  margin:15px;
+}

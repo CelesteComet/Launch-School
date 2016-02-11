@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Managing Collection</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src='main.js'></script>
+</head>
+<body>
+  <main>
+    <h1>Inventory Order Form</h1>
+    <p>Date Ordered</p>
+    <time></time>
+    <form>
+      <dl>
+        <dt>
+          <label for="requesterName">Requester Name</label>
+        </dt>
+        <dd>
+          <input type="text" name="requesterName">
+        </dd>
+        <h1>Shipping Address</h1>
+        <dt>
+          <label>Street Address</label>
+        </dt>
+        <dd>
+          <input type="text" name="streetAddress">
+        </dd>
+        <dt>
+          <label for="city">City</label>
+        </dt>
+        <dd>
+          <input name="city" type="text">
+        </dd>
+        <dt>
+          <label for="state">State</label>
+        </dt>
+        <dd>
+          <input name="state" type="text">
+        </dd>
+        <dt>
+          <label for="zipcode">Zipcode</label>
+        </dt>
+        <dd>
+          <input type="text" name="zipcode">
+        </dd>
+        <h1>Items to order</h1>
+        <ul id="items">
+        </ul>
+        <div id="actions" class="buttonList">
+          <button id="newItem">Add Item</button>
+          <input type="submit" class="button">
+        </div>
+      </dl>
+    </form>
+  </main>
+</body>
+</html>
+
+<script id="template" type="text/template">
+<li id="ID">
+  <dt class="inlineblock"><label for="itemName">Name</label></dt>
+  <dd class="inlineblock"><input name="name" type="text" id="ID"></dd>
+  <dt class="inlineblock"><label for="stockNumber">Stock Number</label></dt>
+  <dd class="inlineblock"><input name="stockNumber" type="text" id="ID"></dd>
+  <dt class="inlineblock"><label for="quantity">Quantity</label></dt>
+  <dd class="inlineblock"><input name="quantity" type="text" id="ID"></dd>
+  <a id="ID" href="#">delete</a>
+</li>
+</script>

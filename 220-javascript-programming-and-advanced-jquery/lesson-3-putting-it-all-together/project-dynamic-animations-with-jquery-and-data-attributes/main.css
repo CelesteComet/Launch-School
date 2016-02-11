@@ -1,0 +1,13 @@
+#canvas {
+  position: relative;
+  background:blue;
+  width:400px;
+  height:200px;
+}
+
+#canvas div{
+  position: absolute;
+  background:yellow;
+  height:30px;
+  width:30px;
+}
