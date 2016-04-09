@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercises: Forms</title>
+</head>
+<body>
+  <form method="post" action="#">
+    <dl>
+      <dt><label for="first_name">First Nmae:</label></dt>
+      <dd><input type="text" name="first_name" id="first_name"></dd>
+      <dt><label for="last_name">Last Nmae:</label></dt>
+      <dd><input type="text" name="last_name" id="last_name"></dd>
+      <dt><label for="email">Email:</label></dt>
+      <dd><input type="email" name="email" id="last_name" autocomplete="off" autocorrect="off" autocapitalize="off"></dd>
+      <dt><label for="phone_number">Phone Number:</label></dt>
+      <dd><input type="phone_number" name="phone_number" id="phone_number"></dd>
+      <select>
+        <option selected>Home</option>
+        <option>Business</option>
+        <option>Mobile</option>
+      </select>
+      </br></br>
+      <input type="submit" value="Send">
+    </dl>
+  </form>
+  <form method="get" action="#">
+    <fieldset>
+      <h1>Category</h1>
+      <ul>
+        <li>
+          <label>
+            <input type="radio" name="category" value="core"/>
+            Core
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="Plugins and Libraries"/>
+            Plugins and Libraries
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="Conventions"/>
+            Conventions
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="Reviews"/>
+            Reviews
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="Opinion"/>
+            Opinion
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="People"/>
+            People
+          </label>
+        </li>
+      </ul>
+      <h1>Tags</h1>
+      <ul>
+        <li>
+          <label>
+            <input type="checkbox" name="html">
+            HTML
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="CSS">
+            CSS
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="Javscript">
+            Javscript
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="Rails">
+            Rails
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="Python">
+            Python
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="Django">
+            Django
+          </label>
+        </li>           
+      </ul>
+      <input type="submit" value="Filter">
+    </fieldset>
+  </form>
+  <form method="get" action="#">
+    <dl>
+      <dt><label for="category">Category</label></dt>
+      <dd>
+        <select name="category">
+          <option value="Core">Core</option>
+          <option value="Plugins and Libraries">Plugins and Libraries</option>
+          <option value="Conventions">Conventions</option>
+          <option value="Reviews">Reviews</option>
+          <option value="Opinion">Opinion</option>
+          <option value="People">People</option>
+        </select>
+      </dd>
+      <dt><label for="tags">Tags</label></dt>
+      <dd>
+        <select name="tags" multiple>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="Javascripts">Javascripts</option>
+          <option value="Ruby">Ruby</option>
+          <option value="Rails">Rails</option>
+          <option value="Python">Python</option>
+          <option value="Django">Django</option>
+        </select>
+      </dd>
+    </dl>
+    <input type="submit" value="Filter">
+    <input type="reset" value="Reset Form">
+
+  </form>
+</body>
+</html>

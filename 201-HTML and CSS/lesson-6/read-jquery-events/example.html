@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      var $paragraph = $("p");
+      var output = "Your favorite fruit are "
+      var $f = $("form");
+      var $input = $f.find("input[type='text']");
+
+      $("a").on("click", function(event){
+        event.preventDefault();
+        var $e = $(event.target);
+        $paragraph.text(output + $e.text());
+      });
+
+      $f.on('submit', function(e){
+        e.preventDefault();
+        $paragraph.text(output + $input.val());
+      });
+    });
+  </script>
+</head>
+<body>
+  <ul>
+    <li><a href="">Apples</a></li>
+    <li><a href="">Bananas</a></li>
+    <li><a href="">Oranges</a></li>
+  </ul>
+  <form>
+    <input type="text" id="fruit">
+    <input type="submit">
+  </form>
+  <p>Choose your favorite fruit!</p>
+</body>
+</html>
