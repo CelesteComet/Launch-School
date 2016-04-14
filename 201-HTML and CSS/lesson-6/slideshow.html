@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Photo Gallery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #141414;
+    }
+
+    p {
+      color: white;
+      padding-top:20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      padding-bottom: 10px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #333333;
+      padding: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    img + img {
+      display:none;
+    }
+
+    figure {
+      padding: 12px;
+      background: white;
+    }
+
+
+    ul {
+      margin-top: 20px;
+    }
+
+    li {  
+      display:inline-block;
+      width: 23.5%;
+      border: 2px solid white;
+      box-sizing: border-box;
+    }
+
+    li + li {
+      margin-left:2%;
+    }
+
+    li img {
+      width: 100%;
+    }
+
+    ul {
+      width: 100%;
+      font-size: 0;
+    }
+
+    .visible {
+      border: 2px solid blue;
+    }
+  </style>
+  <script type="text/javascript">
+    $(window).ready(function(){
+
+      $("li").on('click', function(e){
+        e.preventDefault();
+        var $thumbnail = $(this);
+
+        // find thumbnail with class of visible and remove it to make it hidden
+        $thumbnail.parent().find("li[class='visible']").removeClass();
+
+        // make clicked thumbnail image visible
+        $thumbnail.addClass('visible');
+        $('figure img').fadeOut(300);
+        $('figure img').eq($thumbnail.index()).delay(300).fadeIn(300);
+
+      });
+    });
+  </script>
+</head>
+<body>
+  <main>
+    <h1>My Photo Gallery</h1>
+    <div class="main-image">
+      <figure>
+        <img src="http://www.bilan.ch/sites/default/files/styles/photoswipe/public/story/1037533/model-3-tesla.jpg?itok=hnWVlClV">
+        <img src="http://placehold.it/1200x900/b4c3c5">
+        <img src="http://placehold.it/1200x900/a4b3c5">
+        <img src="http://placehold.it/1200x900/d3a1e9">
+      </figure>
+      <p>Example Photo</p>
+    </div>
+    <ul>
+      <li class="visible">
+        <img src="http://placehold.it/1200x900">
+      </li>
+      <li>
+        <img src="http://placehold.it/1200x900">
+      </li>
+      <li>
+        <img src="http://placehold.it/1200x900">
+      </li>
+      <li>
+        <img src="http://placehold.it/1200x900">
+      </li>
+    </ul>
+
+  </main>
+</body>
+</html>
