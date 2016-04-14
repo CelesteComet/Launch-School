@@ -1,6 +1,5 @@
 class WordProblem
 
-
   OPERATORS = "plus|divided|minus|multiplied"
   QUESTIONS = "What|is|Can|you|give|me|the|answer|of"
 
@@ -31,8 +30,3 @@ class WordProblem
     answer
   end
 end
-
-
-
-
-
