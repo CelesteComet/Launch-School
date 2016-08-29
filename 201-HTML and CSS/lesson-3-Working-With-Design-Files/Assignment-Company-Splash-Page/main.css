@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+  outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/***********************************/
+/*        Typography               */
+/***********************************/
+
+body {
+  font: 16px Helvetica, Arial, sans-serif;
+}
+
+p {
+  line-height: 25px;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+
+h3 {
+  font-size: 1.35em;
+}
+
+/***********************************/
+/*             ICONS               */
+/***********************************/
+
+a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+a.twitter {
+  background: url("assets/icon_twitter.png");
+}
+
+a.facebook {
+  background: url("assets/icon_facebook.png");
+}
+
+a.email {
+  background: url("assets/icon_email.png");
+}
+
+/***********************************/
+/*        BEGIN MAIN CSS           */
+/***********************************/
+
+body {
+  background: #2f2840 url("assets/bg_body.gif");
+  font: 16px Helvetica, Arial, sans-serif;
+  padding: 0 100px;
+}
+
+header {
+  margin-top: 159px;
+  margin-bottom: 107px;
+}
+
+header img {
+  margin: 0px auto;
+  display: block;
+}
+
+main {
+  background: white;
+  padding: 85px 110px 0 110px;
+  text-align: center;
+}
+
+section {
+  padding-bottom: 120px;
+}
+
+h3 {
+  padding-bottom: 15px;
+  color: #3e98b2;
+  font-weight: bold;
+}
+
+h2:before, h2:after {
+  content: "•";
+  margin: 25px;
+  vertical-align: middle;
+}
+
+/***********************************/
+/*             FOOTER              */
+/***********************************/
+
+footer {
+  background: #e7e7e7;
+  text-align: center;
+} 
+
+footer ul {
+  padding: 32px 0 32px 0;
+}
+
+footer li {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 63.5px;
+  margin-right: 63.5px;
+}
+
+/***********************************/
+/*             ICONS               */
+/***********************************/
+
+a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+a.twitter {
+  background: url("assets/icon_twitter.png");
+}
+
+a.facebook {
+  background: url("assets/icon_facebook.png");
+}
+
+a.email {
+  background: url("assets/icon_email.png");
+}
+
+
+
+
+
+
+
