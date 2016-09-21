@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    * {
+      margin:0;
+      padding:0;
+    }
+
+    form {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    dt {
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+
+    p {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      height: 30px;
+      padding: 3px;
+      font-size: 15px;
+    }
+
+    textarea {
+      width:100%;
+    }
+
+    dl {
+      padding: 10px 0 10px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <form action="" method="post">
+    <dl>
+      <dt>
+        <label for="first_name">First Name</label>
+      </dt>
+      <dd>
+        <input type="text" id="first_name" name="first_name">
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        <label for="last_name">Last Name</label>
+      </dt>
+      <dd>
+        <input type="text" id="last_name" name="last_name">
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        <label for="email">Email Address</label>
+      </dt>
+      <dd>
+        <input type="email" id="email" name="email">
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        <label for="city">City</label>
+      </dt>
+      <dd>
+        <input type="text" id="city" name="city">
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        <label for="state">State</label>
+      </dt>
+      <dd>
+        <select id="state" name="state">
+          <option value="AK">AK</option>
+          <option value="CA">CA</option>
+        </select>
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        <label for="zip">Zip</label>
+      </dt>
+      <dd>
+        <input type="text" id="zip" name="zip">
+      </dd>
+    </dl>
+    <p>Which of these colors do you prefer?</p>
+    <ul>
+      <li>
+        <label for="red">
+          <input id="red" type="radio" name="color" value="red">
+          Red
+          
+        </label>
+      </li>
+      <li>
+        <label for="blue">
+          <input type="radio" name="color" value="blue">
+          Blue
+        </label>
+      </li>
+    </ul>
+    <p>What web techs do you want to hear about?</p>
+    <ul>
+      <li>
+        <label for="html">
+          <input id="html" type="radio" name="tech" value="html">
+          HTML
+        </label>
+      </li>
+      <li>
+        <label for="css">
+          <input type="radio" name="tech" value="css">
+          CSS
+        </label>
+      </li>
+    </ul>
+    <p>Comments</p>
+    <textarea rows="5"></textarea>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>

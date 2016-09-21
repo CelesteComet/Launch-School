@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <fieldset>
+    <form method="POST" action="#">
+      <dl>
+        <dt><label for="first_name">First Name</label></dt>
+        <dd><input type="text" name="first_name" id="first_name"></dd>
+      </dl>
+      <dl>
+        <dt><label for="last_name">Last Name</label></dt>
+        <dd><input type="text" name="last_name" id="last_name"></dd>
+      </dl>
+      <dl>
+        <dt><label for="phone">Phone Number</label></dt>
+        <dd><input type="tel" name="phone" id="phone"></dd>
+      </dl>
+      <dl>
+        <dt><label for="email">Email</dt>
+        <dd><input type="email" name="email" id="email" autocomplete="none" autocapitalize="none" autocorrect="none"></dd>
+      </dl>
+      <input type="submit" value="Send">
+    </form>
+  </fieldset>
+  <fieldset>
+    <form action="" method="post">
+      <select name="phone-type" id="phone-type">
+        <option selected value="home">Home</option>
+        <option value="business">Business</option>
+        <option value="mobile">Mobile</option>
+      </select>
+      <input type="submit" value="Send">
+    </form>
+  </fieldset>
+  <fieldset>
+    <form action="" method="post">
+      <h1>Tags</h1>
+      <ul>
+        <li>
+          <label>
+            <input type="checkbox" name="HTML">
+            HTML
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="CSS">
+            CSS
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="JAVASCRIPT">
+            JAVASCRIPT
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="RUBY">
+            RUBY
+          </label>
+        </li>
+      </ul>
+      <h1>Categories</h1>
+      <ul>
+        <li>
+          <label>
+            <input type="radio" name="category" value="core">
+            Core
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="plugins">
+            Plugins and Libraries
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="conventions">
+            Conventions
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="category" value="opinion">
+            Opinion
+          </label>
+        </li>
+      </ul>
+      <input type="submit" value="Send">
+    </form>
+  </fieldset>
+  <form action="" method="post">
+    <fieldset>
+      <h1>Tags</h1>
+      <select name="tags" multiple>
+        <option value="html">HTML</option>
+        <option value="html">CSS</option>
+        <option value="html">Javascript</option>
+        <option value="html">Django</option>
+      </select>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+</body>
+</html>

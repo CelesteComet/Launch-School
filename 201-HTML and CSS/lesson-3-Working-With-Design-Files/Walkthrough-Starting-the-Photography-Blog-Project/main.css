@@ -1,0 +1,114 @@
+/*
+----------------------------------------
+Tantek Celik's Whitepsace Reset
+     Author:    Tantek Celik, Shane Riley
+    Version:    (CC) 2010 Some Rights Reserved - http://creativecommons.org/licenses/by/2.0
+Description:  Resets default styling of common browsers to a common base
+----------------------------------------
+*/
+
+ul,ol { list-style: none; }
+h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input,dl,dt,dd, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+a img,:link img,:visited img, fieldset { border: none; }
+address { font-style: normal; }
+header, section, article, nav, footer, hgroup, details, summary, figure, main { display: block; }
+mark {
+  color: inherit;
+  background: transparent; }
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+body {
+  background: linear-gradient(#d1dbbd, #fcfff5);
+  font: 12px roboto, sans-serif;
+  color: #3e606f;
+}
+
+header {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-size: 3em;
+  background: url("camera.png") 0 0 no-repeat;
+  padding: 45px 0 33px 120px;
+  display:inline-block;
+  color: #193441;
+}
+
+nav {
+  display:inline-block;
+  font-size: 0px;
+  padding-top: 75px;
+  float:right;
+}
+
+nav li {
+  display:inline-block;
+}
+
+nav li:nth-of-type(4) {
+  margin-right: 0;
+}
+
+nav a {
+  color: #91aa9d;
+  display:block;
+  padding: 15px 44px 15px 44px;
+  text-decoration: none;
+  background: white;
+  margin-right: 5px;
+  font-size: 18px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+nav a.active {
+  background: #91aa9d;
+  color:white;
+}
+
+main {
+  background: white;
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px;
+}
+
+h2 {
+  font-size: 32px;
+  padding: 45px 0 28px 0;
+}
+
+p {
+  font-size: 1.5em;
+  padding-bottom: 24px;
+}
+
+#tree {
+  padding: 24px 0 24px 24px;
+}
+
+footer {
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 0 35px 0;
+  color: #96aaad;
+}
+
+.float-right {
+  float:right;
+}
+
+
+
+

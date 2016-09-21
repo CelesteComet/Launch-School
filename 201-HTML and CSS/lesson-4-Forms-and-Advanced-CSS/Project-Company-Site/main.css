@@ -1,0 +1,220 @@
+/* CONVENIENCE CLASSES */
+
+.no-padding {
+  padding: 0 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body > header {
+  background: url(company_site/images/bg_body.gif);
+}
+
+header img {
+  padding: 135px 0 125px 0;
+  display: block;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+nav {
+  padding-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 85px;
+}
+
+nav a {
+  font: 26px "Avenir";
+  color: white;
+}
+
+nav a.active {
+  color: #6db9ff;
+}
+
+/* MAIN */
+
+main {
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 125px;
+}
+
+article {
+  padding-bottom: 160px;
+}
+
+h2 {
+  font: 36px Avenir;
+  padding-bottom: 48px;
+}
+
+h2:before, h2:after {
+  content: "•";
+  padding: 0 28px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+article h3 {
+  font: 24px Avenir;
+  padding-bottom: 20px;
+  color: #3e59b2;
+}
+
+p {
+  font: 20px Avenir;
+}
+
+/* FOOTER */
+
+footer {
+  background: #e7e7e7;
+  font: 20px Avenir;
+  text-align: center;
+  color: #b2b2b2;
+}
+
+footer p {
+  padding: 87px 0 47px 0;
+}
+
+footer ul {
+  padding-bottom: 75px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 40px 0 40px;
+}
+
+footer a {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+}
+
+.twitter { background: url(company_site/images/icons_social-media.png) 0 0 no-repeat; }
+.facebook { background: url(company_site/images/icons_social-media.png) 0 -46px no-repeat; }
+.email { background: url(company_site/images/icons_social-media.png) 0 -92px no-repeat; }
+.instagram { background: url(company_site/images/icons_social-media.png) 0 -138px no-repeat; }
+
+/* PROJECTS PAGE */
+
+article img {
+  width:100%;
+  padding-bottom: 50px;
+}
+
+/* TEAM PAGE */
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+#team {
+  overflow: hidden;
+  padding: 130px 0 250px 0;
+}
+
+#team li {
+  float:left;
+  width: 19.15%;
+  padding-right: 7.8%;
+}
+
+#team li:nth-of-type(4n) {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 220px;
+    height: auto;
+    padding: 80px 0 50px 0;
+  }
+
+  header nav {
+    padding-bottom: 20px;
+  }
+
+  main {
+    padding: 50px 50px 0 50px;
+  }
+
+  #team li:nth-of-type(2n + 1) {
+    width: 30%;
+    height:auto;
+    padding-right: 20%;
+  }
+
+  #team li:nth-of-type(2n) {
+    width: 30%;
+    height:auto;
+    padding-left: 20%;
+    padding-right: 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+  header img {
+    width: 100px;
+    height: auto;
+    float:left;
+    padding: 15px;
+  }
+
+
+  header nav {
+    float: right;
+    padding: 15px;
+  }
+
+  header li {
+    display:block;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+
+  header a {
+    font-size: 19px;
+  }
+
+  header {
+    overflow: hidden;
+  }
+
+  footer li {
+    padding: 15px;
+  }
+
+  #team li:nth-of-type(2n + 1) {
+    width: 40%;
+    height:auto;
+    padding-right: 10%;
+  }
+
+  #team li:nth-of-type(2n) {
+    width: 40%;
+    height:auto;
+    padding-left: 10%;
+    padding-right: 0;
+  }
+}
+
+

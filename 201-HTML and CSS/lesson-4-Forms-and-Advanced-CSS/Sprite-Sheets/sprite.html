@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    .battery {
+      width: 64px;
+      height: 124px;
+      background: transparent url("battery_indicator.png") 0 0 no-repeat;
+    }
+
+    .moderate {
+      /* Push the image up an amount equal to the height of each icon */
+      background-position: 0 -124px;
+    }
+
+    .low {
+      background-position: 0 -248px;
+    }
+
+    .empty {
+      background-position: 0 -372px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Battery Life Indicator</h1>
+
+  <h2>Full</h2>
+  <div class="battery full"></div>
+
+  <h2>Moderate</h2>
+  <div class="battery moderate"></div>
+
+  <h2>Low</h2>
+  <div class="battery low"></div>
+
+  <h2>Empty</h2>
+  <div class="battery empty"></div>
+</body>
+</html>
