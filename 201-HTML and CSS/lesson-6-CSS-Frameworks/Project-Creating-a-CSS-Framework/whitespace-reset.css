@@ -1,9 +1,9 @@
 /*
 ----------------------------------------
 Tantek Celik's Whitepsace Reset
-     Author:    Tantek Celik, Shane Riley
-    Version:    (CC) 2010 Some Rights Reserved - http://creativecommons.org/licenses/by/2.0
-Description:  Resets default styling of common browsers to a common base
+     Author:  	Tantek Celik, Shane Riley
+    Version:  	(CC) 2010 Some Rights Reserved - http://creativecommons.org/licenses/by/2.0
+Description:	Resets default styling of common browsers to a common base
 ----------------------------------------
 */
 
@@ -20,34 +20,3 @@ mark {
   background: transparent; }
 abbr { border: none; }
 summary::-webkit-details-marker { display: none; }
-
-
-header h1 {
-  text-align: center;
-}
-
-header ul {
-  overflow: hidden;
-}
-
-
-header li {
-  float: left;
-}
-
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-section {
-  width: 60%;
-  float: left;
-  padding-right: 10%;
-}
-
-aside {
-  width: 30%;
-  overflow: hidden;
-}

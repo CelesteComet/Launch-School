@@ -1,0 +1,113 @@
+/* CSS RESETS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* CLASS STYLE 
+bubble
+button
+checkbox
+*/
+
+.bubble {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 1px solid green;
+  background-color: green;
+  font-size: .8em;
+  text-align: center;
+}
+
+.button {
+  color: white;
+  background-color: blue;
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  border: none;
+  border-radius: 2px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+/* MODAL STYLE */
+
+#modal {
+  width: 700px;
+  display: none;
+}
+
+#modal dl {
+  padding-bottom: 25px;
+}
+
+#modal dt {
+  float: left;
+  width: 100px;
+}
+
+#modal input[id="title"] {
+  width: 412px;
+  box-sizing: border-box;
+}
+
+#modal textarea {
+  width: 412px;
+  box-sizing: border-box;
+}
+
+.button:nth-of-type(1) {
+  margin-left: 100px;
+}
+
+/* PSUEDO STYLE */
+
+a[href="add"]:before {
+  content: "+";
+  display: inline-block;
+}
+
+main {
+  max-height: 800px;
+  overflow: hidden;
+  padding: 0px 40px 20px 50px;
+}
+
+main li:first-child {
+  border-top: none;
+}
+
+main li {
+  padding: 5px 0 5px 0;
+  border-top: 1px solid gray;
+}
+
+main input[type="checkbox"] {
+  visibility: hidden;
+}
+
+aside {
+  float: left;
+  width: 400px;
+}
+
+
+
+
+
+

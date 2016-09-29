@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" type="text/css" href="todo.css">
+</head>
+<body>
+  <div id="modal">
+    <form method="post" action="#">
+      <dl>
+        <dt><label>Title</label></dt>
+        <dd><input type="text" id="title" name="title"></dd>
+      </dl>
+      <dl>
+        <dt><label>Due Date</label></dt>
+        <dd>
+          <input type="number" placeholder="Day" name="day" id="date"> /
+          <input type="number" placeholder="Month" name="month" id="date"> /
+          <input type="number" placeholder="Year" name="year" id="date">
+        </dd>
+      </dl>
+      <dl>
+        <dt><label>Description</label></dt>
+        <dd><textarea></textarea></dd>
+      </dl>
+      <input type="button" class="button" value="Save">
+      <input type="button" class="button" value="Mark as Complete">
+    </form>
+  </div>
+  <aside>
+    <section>
+      <h3>All Todos</h3>
+      <ul>
+        <li>
+          <a href="">02/16</a>
+          <div class="bubble">8</div>
+        </li>
+        <li>
+          <a href="">03/16</a>
+          <div class="bubble">2</div>
+        </li>
+        <li>
+          <a href="">04/16</a>
+          <div class="bubble">1</div>
+        </li>
+        <li>
+          <a href="">05/16</a>
+          <div class="bubble">1</div>
+        </li>
+        <li>
+          <a href="">06/16</a>
+          <div class="bubble">6</div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Completed</h3>
+      <ul>
+        <li>02/16</li>
+        <li>03/16</li>
+        <li>04/16</li>
+        <li>05/16</li>
+        <li>06/16</li>
+      </ul>
+    </section>
+  </aside>
+  <main>
+    <h3>02/16</h3>
+    <p><a href="add">Add new to do</a></p>
+    <ul>
+      <li>
+        <label for="item1">
+          <div class="checkbox"><input type="checkbox" id="item1"></div>
+          Item 1
+        </label>
+      </li>
+      <li>
+        <label for="item2">
+          <input type="checkbox" id="item2">
+          Item 2
+        </label>
+      </li>
+      <li>
+        <label for="item3">
+          <input type="checkbox" id="item3">
+          Item 3
+        </label>
+      </li>
+      <li>
+        <label for="item4">
+          <input type="checkbox" id="item4">
+          Item 4
+        </label>
+      </li>
+      <li>
+        <label for="item5">
+          <input type="checkbox" id="item5">
+          Item 5
+        </label>
+      </li>
+      <li>
+        <label for="item6">
+          <input type="checkbox" id="item6">
+          Item 6
+        </label>
+      </li>
+      <li>
+        <label for="item7">
+          <input type="checkbox" id="item7">
+          Item 7
+        </label>
+      </li>
+      <li>
+        <label for="item8">
+          <input type="checkbox" id="item8">
+          Item 8
+        </label>
+      </li>
+      <li>
+        <label for="item9">
+          <input type="checkbox" id="item9">
+          Item 9
+        </label>
+      </li>
+    </ul>
+  </main>
+
+</body>
+</html>

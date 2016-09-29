@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+
+    * {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    .row {
+      
+    }
+
+    .fourth {
+      float: left;
+      width: 23.5%;
+      margin-left: 2%;
+      background: pink;
+    }
+
+    .row .fourth:first-child {
+      margin-left: 0;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+
+      .fourth {
+        float: none;
+        width: auto;
+        display: block;
+        margin-left: 0;
+      }
+
+      .row {
+        margin-left: 0;
+
+      }
+
+
+
+      .mobile {
+        display: block;
+      }
+
+      .desktop {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <ul class="row">
+    <li class="fourth">8 GB SD Card</li>
+    <li class="fourth">16 GB SD Card</li>
+    <li class="fourth">32 GB SD Card</li>
+    <li class="fourth">64 GB SD Card</li>
+  </ul>
+</body>
+</html>
