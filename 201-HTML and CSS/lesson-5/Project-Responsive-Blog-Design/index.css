@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #61c7b5;
+}
+
+body > header {
+  background: #3d3d3d;
+}
+
+header h1 {
+  text-align: center;
+  padding: 145px 0 137px 0;
+  background: url("a.png") 50% 100% no-repeat;
+  background-size: auto 100px;
+}
+
+header h1 a {
+  font: bold 68pt 'Helvetica';
+  color: white;
+  letter-spacing: 10px;
+}
+
+header nav {
+  position: relative;
+  left: 50%;
+  margin-left: -354px;
+  padding-bottom: 56px;
+  padding-top: 139px;
+  width: 800px;
+}
+
+header ul:after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+header li {
+  float:left;
+  list-style-type: none;
+  padding: 0 25px 0 25px;
+}
+
+header a {
+  font: 20pt 'Helvetica';
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 90px 100px 90px 100px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+main > section {
+  float: left;
+  width: 65%;
+  padding-right: 50px;
+}
+
+main > aside {
+  overflow: hidden;
+  background: #f6f7f8;
+  padding: 40px 36px 40px 36px;
+  font: 14px Helvetica;
+  width: 150px;
+}
+
+main section h2 {
+  font: 36pt Helvetica;
+  color: #45494d;
+  padding-bottom: 30px;
+}
+
+main > section p {
+  font: 20pt Helvetica;
+  color: #45494d;
+  line-height: 37px;
+}
+
+main > section p:nth-of-type(1){
+  padding-bottom: 40px;
+}
+
+main section a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+main article {
+  padding-bottom: 100px;
+}
+
+aside section {
+  padding-bottom: 120px;
+}
+
+aside h3 {
+  padding-bottom: 36px;
+  color: #40474e;
+}
+
+aside li {
+  list-style-type: none;
+  padding-bottom: 15px;
+  
+}
+
+aside li:before {
+  content: url("aa.png");
+  padding-right: 15px;
+  vertical-align: middle;
+}
+
+aside a, aside p {
+  color: #787b80;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside p {
+  font: 14px Helvetica;
+  line-height: 30px;
+}
+
+input[type="button"] {
+  width: 85px;
+  border-radius: 20px;
+  border: none;
+  font: 14px Helvetica;
+  padding: 10px 0 10px 0;
+  color: white;
+}
+
+input[type="button"]:nth-of-type(1) {
+  margin-right: 30px;
+}
+
+input[type="button"].active {
+  background: #50c3af;
+}
+
+footer {
+  width: 900px;
+  margin: 0 auto;
+  border-top: 1px solid #d0d0d0;
+  height: 85px;
+  padding-top: 19px;
+
+}
+
+footer p {
+  color: #c1c3c5;
+}
