@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+  <input type="checkbox" id="hamburger">
+  <aside>
+    <section id="all-todos">
+      <h2 class="aside-icon list-icon">All Todos</h2><span class="gray-bubble">18</span>
+      <ul>
+        <li>
+          <a class="active" href="">
+            <div><p>02/16</p><span class="gray-bubble">8</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div><p>03/16</p><span class="gray-bubble">2</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div><p>04/16</p><span class="gray-bubble">1</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div><p>05/16</p><span class="gray-bubble">1</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div><p>06/16</p><span class="gray-bubble">6</span></div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="completed-todos">
+      <h2 class="aside-icon completed-icon">Completed</h2>
+      <ul>
+        <li>
+          <a href="">
+            <div><p>02/16</p></div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div><p>03/16</p></div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div><p>04/16</p></div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div><p>05/16</p></div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div><p>06/16</p></div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </aside>
+  <main>
+    <header>
+      <label for="hamburger"><span class="hamburger"></span></label>
+      <div>
+        <h1>02/16</h1>
+        <span class="bubble">8</span>
+      </div>
+    </header>
+    <div class="main-icon plus-icon add-new">Add new to do</div>
+    <ul>
+      <li>
+        <label for="modal-checkbox" class="checkbox checkbox-open">Item 1
+          <input type="checkbox" id="modal-checkbox">
+          <span class="garbage"></span> 
+          <div>
+            <div id="modal">
+              <form method="post" action="#">
+                <dl>
+                  <dt><label>Title</label></dt>
+                  <dd><input type="text" id="title" name="title"></dd>
+                </dl>
+                <dl>
+                  <dt><label>Due Date</label></dt>
+                  <dd id="modal-dates">
+                    <input type="number" placeholder="Day" name="day" id="date-day">
+                    <span>/</span>
+                    <input type="number" placeholder="Month" name="month" id="date-month"> 
+                    <span>/</span>
+                    <input type="number" placeholder="Year" name="year" id="date-year">
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><label>Description</label></dt>
+                  <dd><textarea placeholder="Description"></textarea></dd>
+                </dl>
+                <div id="modal-buttons">
+                  <input type="button" class="button" value="Save">
+                  <input type="button" class="button" value="Mark as Complete">
+                </div>
+              </form>
+            </div>
+          </div>
+        </label>
+      </li>
+      <li>
+        <input type="checkbox" id="Item2">
+        <label for="Item2" class="checkbox checkbox-open">Item 2</label>
+        <span class="garbage"></span> 
+      </li>
+      <li>
+        <input type="checkbox" id="Item3">
+        <label for="Item3" class="checkbox checkbox-open">Item 3</label>
+        <span class="garbage"></span> 
+      </li>
+      <li>
+        <input type="checkbox" id="Item4">
+        <label for="Item4" class="checkbox checkbox-open">Item 4</label>
+        <span class="garbage"></span> 
+      </li>
+      <li>
+        <input type="checkbox" id="Item5">
+        <label for="Item5" class="checkbox checkbox-open">Item 5</label>
+        <span class="garbage"></span> 
+      </li>
+      <li>
+        <input type="checkbox" id="Item6">
+        <label for="Item6" class="checkbox checkbox-open">Item 6</label>
+        <span class="garbage"></span> 
+      </li>
+      <li>
+        <input type="checkbox" id="Item7">
+        <label for="Item7" class="checkbox checkbox-open">Item 7</label>
+        <span class="garbage"></span> 
+      </li>
+      <li>
+        <input type="checkbox" id="Item8">
+        <label for="Item8" class="checkbox checkbox-open">Item 8</label>
+        <span class="garbage"></span> 
+      </li>
+      <li>
+        <input type="checkbox" id="Item9">
+        <label for="Item9" class="checkbox checkbox-open">Item 9</label>
+        <span class="garbage"></span> 
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
